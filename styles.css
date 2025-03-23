@@ -38,7 +38,7 @@ body {
 .intro-image img{
     margin-top: 5%;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     height: 40vh;
     border-radius: 20px;
     object-fit: cover;
@@ -46,6 +46,6 @@ body {
 }
 
 .intro {
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
 }
