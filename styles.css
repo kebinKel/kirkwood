@@ -145,7 +145,7 @@ nav li:hover {
 }
 
 .card-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .bottom-blur {
@@ -155,7 +155,7 @@ nav li:hover {
     left: 0;
     top: 0;
     pointer-events: none;
-    background-image: linear-gradient(to top,rgba(3, 20, 3, 0.897)20%, rgba(7, 211, 92, 0.356)100%);
+    background-image: linear-gradient(to top,rgba(3, 20, 3, 0.952)30%, rgba(7, 211, 92, 0.356)100%);
 }
 .card-details {
     width: 100%;
@@ -176,11 +176,12 @@ nav li:hover {
     font-style: normal;
     font-size: 20px;
     padding: 20px 0px;
+    color: rgb(255, 231, 16);
 }
 .card-about {
     text-transform: capitalize;
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
     letter-spacing: 0.02rem;
     word-spacing: 0.1rem;
@@ -196,12 +197,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     background-color: green;
     color: white;
     padding: 15px;
     text-align: center;
     margin-top: 10%;
+    
 }
 
 footer .card-about {
