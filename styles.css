@@ -12,6 +12,10 @@ body {
     font-style: normal;
 }
 
+.contain-contents {
+    padding: 15px;
+}
+
 .header {
     width: 100%;
     height: 10vh;
@@ -23,8 +27,45 @@ body {
     padding: 15px;
 }
 
-.header nav {
-   display: none; 
+nav {
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(255, 252, 247);
+    right: -100%;
+    z-index: 1;
+    top: 0;
+    gap: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease-in-out
+}
+
+nav.open {
+    box-shadow: 0 0 200px 100px #000000ef;
+    right: 0%;
+}
+
+nav li {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+nav li:hover {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: green;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header .name {
@@ -35,17 +76,176 @@ body {
     font-size: 15px;
 }
 
-.intro-image img{
-    margin-top: 5%;
-    width: 100%;
-    padding: 20px;
+.intro-image {
+    margin: 5%;
+    width: 90%;
     height: 35vh;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
+}
+
+
+.int-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.int-img:hover {
+    transform: scale(1.5);
 }
 
 .intro {
-    padding: 20px;
+    padding: 10px;
     text-align: justify;
+}
+
+.project-exp {
+    padding-top: 10px;
+}
+
+.sub-head {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px 0px;
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 20px;
+    width: 100%;
+    /* max-width: 2000px; */
+    justify-content: center;
+}
+
+.card-container {
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-container .card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+.bottom-blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to top,rgba(3, 20, 3, 0.897)20%, rgba(7, 211, 92, 0.356)100%);
+}
+.card-details {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    color: white;
+    pointer-events: none;
+    text-align: left;
+}
+
+
+.card-title {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.card-about {
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.1rem;
+    text-align-last: left;
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+footer .card-about {
+    text-align: center;
+}
+
+.fa-bars {
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    position: fixed;
+    z-index: 5;
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .card-wrap {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .card-container {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+}
+
+
+@media (min-width: 900px) {
+
+    .card-container {
+        flex: 1 1 calc(25% - 20px);
+    }
+
 }
