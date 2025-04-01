@@ -7,7 +7,7 @@
 
 :root {
     --pri-color: #056305;
-    --sec-color: rgb(255, 92, 16);
+    --sec-color: rgb(207, 161, 7);
     --b-font-size: 12px;
     --s-font-size: 10px;
     --h1-font: 16px; 
@@ -24,10 +24,18 @@ body {
     background-color: #f4fff6;
 }
 
+.illustration {
+    width: 10rem;
+    margin-top: 5%;
+    display: flex;
+    justify-self: center;
+}
+
 
 header {
     width: 100%;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 nav {
@@ -53,7 +61,7 @@ nav {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem 0;
 }
 
 .links {
@@ -63,7 +71,7 @@ nav {
 .fa-bars {
     font-size: 1.5rem;
     position: fixed;
-    right: 5%;
+    right: 2%;
     background-color: green;
     width: 40px;
     height: 40px;
@@ -125,8 +133,24 @@ nav {
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
+    text-decoration: none;
+    color: black;
     transition: 0.3s ease-in-out;
 }
+.links li a {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    width: 100%;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
 
 .links li:hover {
     width: 100%;
